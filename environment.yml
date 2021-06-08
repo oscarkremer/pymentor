@@ -1,0 +1,25 @@
+name: mentor
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - conda=4.5.12=py36_1000
+  - pip=18.1=py36_1000
+  - numpy=1.15.4=py36_blas_openblashb06ca3d_0
+  - jupyter
+  - pip:
+    - autopep8
+    - flake8
+    - python-dotenv
+    - gensim
+    - statsmodels
+    - pytest
+    - pandas
+    - scipy
+    - seaborn
+    - matplotlib
+    - setuptools
+    - tqdm
+    - wheel
+    - -e .
