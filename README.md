@@ -1,4 +1,4 @@
-# Genetic Algorithms for Trajectory Optimization
+# Mentor
 
 Here we submitted all code snippets to help with artificial intelligence coding to deal with an 
 optimization problem, where the trajectory planning of a didactic robot is tackled.
@@ -63,11 +63,6 @@ Pipeline to generate trajectories for Mentor didactic robot using artificial int
         │       │
         │       └── node.py  
         │
-        ├── polinomy         <- Define Polynomial class
-        │   │   
-        │   ├── __init__.py
-        │   │
-        │   └── model.py
         │
         └── utils  <- Scripts to insert data, constants and numerical manipulations
             │   
