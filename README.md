@@ -35,15 +35,15 @@ Pipeline to generate trajectories for Mentor didactic robot using artificial int
     ├── environment.yml    <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > environment.yml`
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    └── src                <- Source code for use in this project.
-        │
-        ├── __init__.py    <- Makes src a Python module
-        │
         ├── api           <- Scripts for main code
         │   │
         │   ├── kinematics.py      <- Run kinematics and inverse kinematics
         │   │
         │   └── genetic.py           <- Run genetic algorithm
+    └── src                <- Source code for use in this project.
+        │
+        ├── __init__.py    <- Makes src a Python module
+        │
         │
         ├── mentor         <- Define mentor class
         │   │   
