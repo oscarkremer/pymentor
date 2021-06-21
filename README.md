@@ -2,7 +2,7 @@
 
 Mentor is a Python library to implement a computational model of the Mentor Didactic Robotic Arm. This model was first published in the work *A Genetic Approach for Trajectory Optimization Applied to a Didactic Robot*. The library includes:
 
-* Direct kinematics based on Denavit-Hartenberg parameters, were variables represented in the cartesian coordinate space are transformed to joint space.
+* Direct kinematics based on Denavit-Hartenberg parameters, where variables represented in the cartesian coordinate space are transformed to joint space.
 * Inverse kinematics to encounter joint angles based on position and orientation matrix.
 * Exception and error treatment in case of impossible position/orientation pairs.
 * Method to deal with alpha, beta and gamma angles to encounter orientation 3x3 matrix based on XYZ angles.
@@ -36,7 +36,7 @@ Any contributions you make are **greatly appreciated**. To contribute please fol
 5. Open a Pull Request
 
 ## License
-[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
+General Public License version 3.0 [GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 ## Contact
 

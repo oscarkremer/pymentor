@@ -3,9 +3,6 @@ This script execute the kinematics and inverse kinematics computation.
 Firstly, a set of joint angles must be inputed, used in the direct kinematic 
 movement. Then, with the encountered position and orientation the inverse kinematics
 is applied to verify if the same joint angles are found.
-
-With the conda environment activated this script will run using 
-----> make kinematics.
 '''
 import numpy as np
 from src.mentor import Mentor
