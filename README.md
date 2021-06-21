@@ -1,77 +1,29 @@
-# Mentor
+# Foobar
 
-Here we submitted all code snippets to help with artificial intelligence coding to deal with an 
-optimization problem, where the trajectory planning of a didactic robot is tackled.
+Foobar is a Python library for dealing with word pluralization.
 
+## Installation
 
-## Install
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-$ make
-$ make install
+pip install foobar
 ```
 
-See: `Makefile` to know other commands.
+## Usage
 
-## Artificial Intelligence Project
+```python
+import foobar
 
-==============================
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
 
-Pipeline to generate trajectories for Mentor didactic robot using artificial intelligence optimization algorithms
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Project Organization
+Please make sure to update tests as appropriate.
 
-==============================
-
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make kinematics` or `make genetic`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   └── results        <- The folder to save .csv files with the performance of the model.
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    ├── environment.yml    <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > environment.yml`
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-        ├── api           <- Scripts for main code
-        │   │
-        │   ├── kinematics.py      <- Run kinematics and inverse kinematics
-        │   │
-        │   └── genetic.py           <- Run genetic algorithm
-    └── src                <- Source code for use in this project.
-        │
-        ├── __init__.py    <- Makes src a Python module
-        │
-        │
-        ├── mentor         <- Define mentor class
-        │   │   
-        │   ├── __init__.py
-        │   │
-        │   └── mentor.py
-        │
-        ├── models         <- Define populaion class, and population element class
-        │   │   
-        │   ├── __init__.py    
-        │   │
-        │   ├── model.py
-        │   │
-        │   └── node
-        │       │   
-        │       ├── __init__.py
-        │       │
-        │       └── node.py  
-        │
-        │
-        └── utils  <- Scripts to insert data, constants and numerical manipulations
-            │   
-            ├── __init__.py
-            │
-            ├── constants.py
-            │
-            ├── input.py
-            │
-            └── numerical.py
-
--------
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
