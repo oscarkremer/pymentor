@@ -2,9 +2,6 @@
 This script defines the Mentor class package, where there are
 specified as Mentor methods the computations of direct and
 inverse kinematics
-
-This package can be imported with:
-from src.mentor import Mentor
 '''
 import itertools
 import numpy as np

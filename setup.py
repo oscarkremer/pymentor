@@ -11,15 +11,15 @@ setuptools.setup(
      scripts=['mentor/mentor.py', 'mentor/error.py'] ,
      author="Oscar Schmitt Kremer",
      author_email="oscar.s.kremer@hotmail.com",
-     description="A package to implement a physical model of the Mentor \\
-     didactic robotic arm. The package includes of direct and inverse kinematics.',
+     description="A package to implement a computational model of the Mentor \\
+     didactic robotic arm.',
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/oscarkremer/mentor",
      packages=setuptools.find_packages(),
      classifiers=[
          "Programming Language :: Python :: 3",
-         "License :: OSI Approved :: MIT License",
+         "License :: OSI Approved :: GPL v3 License",
          "Operating System :: OS Independent",
      ],
     install_requires=[
