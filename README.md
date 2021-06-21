@@ -2,10 +2,10 @@
 
 Mentor is a Python library to implement a computational model of the Mentor Didactic Robotic Arm. This model was first published in the work *A Genetic Approach for Trajectory Optimization Applied to a Didactic Robot*. The library includes:
 
-* Direct kinematics based on Denavit-Hartenberg parameters, passing variables from cartesian coordinate space to joint space.
+* Direct kinematics based on Denavit-Hartenberg parameters, were variables represented in the cartesian coordinate space are transformed to joint space.
 * Inverse kinematics to encounter joint angles based on position and orientation matrix.
-* Excepion and error treatment in case of impossible position/orientation pairs.
-* Method to deal with alpha, beta and gamma angles to encounter orientation 3x3 matrix.
+* Exception and error treatment in case of impossible position/orientation pairs.
+* Method to deal with alpha, beta and gamma angles to encounter orientation 3x3 matrix based on XYZ angles.
 
 ## Installation
 
@@ -41,7 +41,7 @@ Any contributions you make are **greatly appreciated**. To contribute please fol
 
 ## Contact
 
-Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-schmitt-kremer-67aa30134/) oscar.s.kremer@hotmail.com
+Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-schmitt-kremer-67aa30134/) [Email] oscar.s.kremer@hotmail.com
 
 Project Link: [Mentor Repository](https://github.com/oscarkremer/mentor)
 
@@ -49,30 +49,6 @@ Project Link: [Mentor Repository](https://github.com/oscarkremer/mentor)
 
 O. S. Kremer, M. A. B. Cunha, F. S. Moraes, S. S. Schiavon. *A Genetic Apporach for Trajectory Optimization Applied to a Didactic Robot* **2019 Latin American Robotics Symposium**. 2019.
 [doi:10.1109/LARS-SBR-WRE48964.2019.00049](doi:10.1109/LARS-SBR-WRE48964.2019.00049)
-
-<br />
-<p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</p>
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
