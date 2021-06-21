@@ -11,7 +11,7 @@ setuptools.setup(
      scripts=['mentor/mentor.py', 'mentor/error.py'] ,
      author="Oscar Schmitt Kremer",
      author_email="oscar.s.kremer@hotmail.com",
-     description="A package to implement a computational model of the Mentor \\
+     description="A package to implement a computational model of Mentor \\
      didactic robotic arm.',
      long_description=long_description,
      long_description_content_type="text/markdown",

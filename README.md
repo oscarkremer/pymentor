@@ -40,7 +40,7 @@ Any contributions you make are **greatly appreciated**. To contribute please fol
 
 ## Contact
 
-Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-schmitt-kremer-67aa30134/) [Email] oscar.s.kremer@hotmail.com
+Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-schmitt-kremer-67aa30134/) [Email](oscar.s.kremer@hotmail.com)
 
 Project Link: [Mentor Repository](https://github.com/oscarkremer/mentor)
 
