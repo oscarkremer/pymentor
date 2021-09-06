@@ -1,12 +1,12 @@
 '''
 This script defines the Mentor class package, where there are
-specified as Mentor methods the computations of direct and
+specified as ErrorMMentor methods the computations of direct and
 inverse kinematics
 '''
 import itertools
 import numpy as np
 
-class Mentor:
+class ErrorMentor:
     '''
     Mentor Class. This class represents the mentor didactic robot, obeying 
     the laws of direct and inverse kinematics, and any physical constraint
