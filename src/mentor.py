@@ -5,6 +5,9 @@ inverse kinematics
 '''
 import itertools
 import numpy as np
+from error import InvalidOrientation, InvalidPosition, InvalidPair
+
+TOL = 0.001
 
 class Mentor:
     '''
@@ -82,8 +85,8 @@ class Mentor:
 
         theta = self._inverse_kinematics(pos, rot, tag_theta1=tag_theta1, tag_theta2=tag_theta2, tag_theta3=tag_theta3)
         returned_pos, returned_rot = self.get_position(theta)        
-        tag = self.verify(pos, rot, returned_pos, returned_rot)
-        return tag, theta
+        tag_orientation, tag_position, tag_pair = self.verify(pos, rot, returned_pos, returned_rot)
+        return tag_orientation, tag_position, tag_pair, theta
 
     def get_angles(self, pos, rot):
         '''
@@ -103,11 +106,23 @@ class Mentor:
         theta:
             List of joint angles returned in case position/orientation is possible.
         '''
-        for element in itertools.product([True, False],[False, True],[False, True]):
-            tag, theta = self.test_inverse_kinematics(pos, rot, element[0], element[1], element[2])
-            if tag:
-                return False, theta
-        return True, theta 
+        try:
+            for element in itertools.product([True, False],[False, True],[False, True]):
+                tag_orientation, tag_position, tag_pair, theta = self.test_inverse_kinematics(pos, rot, element[0], element[1], element[2])
+                if tag_orientation*tag_position*tag_pair:
+                    return theta
+            if tag_pair:
+                raise InvalidPair
+            if tag_orientation:
+                raise InvalidOrientation
+            if tag_position:
+                raise InvalidPosition
+        except InvalidOrientation:
+            print('Invalid orientation, please try different values for alpha-beta-gamma angles!')
+        except InvalidPosition:
+            print('Invalid position, please try different values for x-y-z coordinates!')
+        except InvalidPair:
+            print('Invalid orientation-position, please try other values!')
 
     def _inverse_kinematics(self, pos, orientation, tag_theta1=True, tag_theta2=True, tag_theta3=True):
         '''
@@ -168,12 +183,21 @@ class Mentor:
         -------
         Tag identifying if rotation and position returned matches with the ones pre-specified.
         '''
+        orientation, position, pair = False, False, False
         diff = pos[:3]-returned_pos[:3]
         rot_norm = np.linalg.norm(rot-returned_rot)
-        if rot_norm > 0.001 or abs(diff[0])>0.001 or abs(diff[1]>0.001) or abs(diff[2]>0.001):
-            return False
+        if rot_norm > TOL and (abs(diff[0])>TOL or abs(diff[1])>TOL or abs(diff[2])>TOL):
+            return False, False, False
         else:
-            return True
+            if rot_norm > TOL:
+                return False, True , True            
+            else:
+                if (abs(diff[0])>TOL or abs(diff[1])>TOL or abs(diff[2])>TOL):
+                    return True, False, True
+                else:
+                    return True, True, True
+
+
 
     def get_position(self, theta, z_axis=0):
         '''
