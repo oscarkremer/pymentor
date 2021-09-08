@@ -40,7 +40,7 @@ General Public License version 3.0 [GPL-3.0](https://choosealicense.com/licenses
 
 ## Contact
 
-Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-schmitt-kremer-67aa30134/) [Email](oscar.s.kremer@hotmail.com)
+Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-kremer/) [Email](oscar.s.kremer@hotmail.com)
 
 Project Link: [Mentor Repository](https://github.com/oscarkremer/mentor)
 

@@ -1,21 +1,19 @@
-import setuptools
-
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-
-setuptools.setup(
+setup(
      name='mentor',  
      version='0.1',
-     scripts=['src/mentor.py', 'src/error.py'] ,
+     scripts=['mentor/mentor.py', 'mentor/error.py'] ,
      author="Oscar Schmitt Kremer",
      author_email="oscar.s.kremer@hotmail.com",
      description="A package to implement a computational model of Mentor didactic robotic arm.",
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/oscarkremer/mentor",
-     packages=setuptools.find_packages(),
+     packages=find_packages(),
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: GPL v3 License",
