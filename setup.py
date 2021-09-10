@@ -12,7 +12,7 @@ setup(
      description="A package to implement a computational model of Mentor didactic robotic arm.",
      long_description=long_description,
      long_description_content_type="text/markdown",
-     url="https://github.com/oscarkremer/mentor",
+     url="https://github.com/oscarkremer/pymentor",
      packages=find_packages(),
      classifiers=[
          "Programming Language :: Python :: 3",

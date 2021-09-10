@@ -1,4 +1,4 @@
-# Mentor
+# Pymentor
 
 Mentor is a Python library to implement a computational model of the Mentor Didactic Robotic Arm. This model was first published in the work *A Genetic Approach for Trajectory Optimization Applied to a Didactic Robot*. The library includes:
 
