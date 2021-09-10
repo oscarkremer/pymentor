@@ -106,23 +106,16 @@ class Mentor:
         theta:
             List of joint angles returned in case position/orientation is possible.
         '''
-        try:
-            for element in itertools.product([True, False],[False, True],[False, True]):
-                tag_orientation, tag_position, tag_pair, theta = self.test_inverse_kinematics(pos, rot, element[0], element[1], element[2])
-                if tag_orientation*tag_position*tag_pair:
-                    return theta
-            if tag_pair:
-                raise InvalidPair
-            if tag_orientation:
-                raise InvalidOrientation
-            if tag_position:
-                raise InvalidPosition
-        except InvalidOrientation:
-            print('Invalid orientation, please try different values for alpha-beta-gamma angles!')
-        except InvalidPosition:
-            print('Invalid position, please try different values for x-y-z coordinates!')
-        except InvalidPair:
-            print('Invalid orientation-position, please try other values!')
+        for element in itertools.product([True, False],[False, True],[False, True]):
+            tag_orientation, tag_position, tag_pair, theta = self.test_inverse_kinematics(pos, rot, element[0], element[1], element[2])
+            if tag_orientation*tag_position*tag_pair:
+                return theta
+        if tag_pair:
+            raise InvalidPair('Pair Position-Orientation unreachable, please try different values!')
+        if tag_orientation:
+            raise InvalidOrientation('Orientation unreachable for such position, please try different values for alpha-beta-gamma angles!')
+        if tag_position:
+            raise InvalidPosition('Position unreachable, please try different values for x-y-z coordinates!')
 
     def _inverse_kinematics(self, pos, orientation, tag_theta1=True, tag_theta2=True, tag_theta3=True):
         '''

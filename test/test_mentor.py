@@ -17,20 +17,19 @@ def test_direct_kinematics():
     pos, rot = robot.get_position(angles)
     print(pos, rot)
        
-        
+    
 def test_inverse_kinematics1():
-    pos = [24.21323027, 13.97951501, -17.07885504, 1.0]
-    rot = [[0.59049287, 0.23642905, -0.77163428],
+    pos = np.array([24.21323027, 13.97951501, -17.07885504, 1.0])
+    rot = np.array([[0.59049287, 0.23642905, -0.77163428],
         [-0.23642905, -0.86349762, -0.44550326],
-        [-0.77163428, 0.44550326, -0.4539905 ]]
-    predictions = pd.read_csv('test_data/dataset_2.csv').drop(['gene'], axis=1).values
-    covira = Covira()
-    covira.fit(predictions)
-    print(covira.predict(predictions))
-
+        [-0.77163428, 0.44550326, -0.4539905 ]])
+    robot = Mentor()
+    angles = robot.get_angles(pos,rot)
+    pos, rot = robot.get_position(angles)
+    print(pos,rot)
 
 def test_inverse_kinematics2():
     robot = Mentor()
     pos = [10, 10, 10, 1]
-    rot = robot.get_orientation(30, 30, 30):
-    robot.get_angles(pos,rot)[1])/np.pi
+    rot = robot.get_orientation(30, 30, 30)
+    print(robot.get_angles(pos,rot)/np.pi)
