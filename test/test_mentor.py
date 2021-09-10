@@ -4,7 +4,7 @@ Firstly, a set of joint angles must be inputed, used in the direct kinematic
 movement. Then, with the encountered position and orientation the inverse kinematics
 is applied to verify if the same joint angles are found.
 '''
-from mentor import Mentor
+from pymentor import Mentor
 import numpy as np
 import sys, os
 myPath = os.path.dirname(os.path.abspath(__file__))

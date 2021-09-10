@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-     name='mentor',  
+     name='pymentor',  
      version='0.1',
-     scripts=['mentor/mentor.py', 'mentor/error.py'] ,
+     scripts=['pymentor/mentor.py', 'pymentor/error.py'] ,
      author="Oscar Schmitt Kremer",
      author_email="oscar.s.kremer@hotmail.com",
      description="A package to implement a computational model of Mentor didactic robotic arm.",
