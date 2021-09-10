@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
      name='pymentor',  
-     version='0.1',
+     version='0.1.1',
      scripts=['pymentor/mentor.py', 'pymentor/error.py'] ,
      author="Oscar Schmitt Kremer",
      author_email="oscar.s.kremer@hotmail.com",

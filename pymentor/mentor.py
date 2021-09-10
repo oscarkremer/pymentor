@@ -200,7 +200,7 @@ class Mentor:
         ----------
         theta: Numpy Array
             Array with joint angles of the robot.
-        z_axis: float (opcional)
+        z_axis: float (optional)
             Orthogonal distance to create an extra axis located with the same orientation 
             of the frame from the theta 5 but with a displacement in the z-axis.
             
@@ -245,7 +245,7 @@ class Mentor:
         ----------
         Matrix: Numpy Array
             Joint angle 4x4 matrix.
-        z_axis: float (opcional)
+        z_axis: float (optional)
             Distance in Z Axis to define an extra frame.
 
         Returns
