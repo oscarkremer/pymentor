@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: mentor
+Version: 0.1
+Summary: A package to implement a computational model of Mentor didactic robotic arm.
+Home-page: https://github.com/oscarkremer/mentor
+Author: Oscar Schmitt Kremer
+Author-email: oscar.s.kremer@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Mentor
 
 Mentor is a Python library to implement a computational model of the Mentor Didactic Robotic Arm. This model was first published in the work *A Genetic Approach for Trajectory Optimization Applied to a Didactic Robot*. The library includes:
@@ -9,10 +23,10 @@ Mentor is a Python library to implement a computational model of the Mentor Dida
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pymentor.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install mentor.
 
 ```bash
-pip install pymentor
+pip install mentor
 ```
 
 ## Usage
@@ -21,7 +35,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 
 ```python
-import pymentor
+import mentor
 
 ```
 
@@ -42,9 +56,10 @@ General Public License version 3.0 [GPL-3.0](https://choosealicense.com/licenses
 
 Oscar Schmitt Kremer - [Linkedin](https://www.linkedin.com/in/oscar-kremer/) [Email](oscar.s.kremer@hotmail.com)
 
-Project Link: [pymentor Repository](https://github.com/oscarkremer/pymentor)
+Project Link: [Mentor Repository](https://github.com/oscarkremer/mentor)
 
 ## References
 
 O. S. Kremer, M. A. B. Cunha, F. S. Moraes, S. S. Schiavon. *A Genetic Apporach for Trajectory Optimization Applied to a Didactic Robot* **2019 Latin American Robotics Symposium**. 2019.
 [doi:10.1109/LARS-SBR-WRE48964.2019.00049](doi:10.1109/LARS-SBR-WRE48964.2019.00049)
+

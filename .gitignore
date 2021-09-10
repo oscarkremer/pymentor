@@ -1,4 +1,4 @@
 build/*
 dist/*
-mentor.egg-info/*
+pymentor.egg-info/*
 *.pyc

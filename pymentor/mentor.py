@@ -5,7 +5,7 @@ inverse kinematics
 '''
 import itertools
 import numpy as np
-from mentor.error import InvalidOrientation, InvalidPosition, InvalidPair
+from pymentor.error import InvalidOrientation, InvalidPosition, InvalidPair
 
 TOL = 0.001
 
